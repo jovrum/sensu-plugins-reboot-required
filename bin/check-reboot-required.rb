@@ -43,6 +43,8 @@ class CheckRebootRequired < Sensu::Plugin::Check::CLI
       if File.file?(pkglist_path)
         packages = File.readlines(pkglist_path)
                        .map(&:chomp)
+                       .sort
+                       .uniq
                        .reject(&method(:package_ignored?))
 
         if packages.empty?
