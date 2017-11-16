@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.require_paths          = ['lib']
   s.required_ruby_version  = '>= 2.0.0'
 
-  s.summary                = 'Sensu plugins for working with VMware integrated OpenStack'
+  s.summary                = 'Check if a reboot was required by a package upgrade on a Debian-based OS.'
   s.test_files             = s.files.grep(%r{^(test|spec|features)/})
   s.version                = SensuPluginsRebootRequired::Version::VER_STRING
 

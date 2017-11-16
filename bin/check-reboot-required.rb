@@ -24,7 +24,7 @@ require 'sensu-plugin/check/cli'
 
 class CheckRebootRequired < Sensu::Plugin::Check::CLI
   option :ignore_packages,
-         short: '-i FOO',
+         short: '-i',
          long: '--ignore-packages pkg1[,pkg2,...,pkgN]',
          description: 'Packages requesting reboot to ignore',
          default: ''
