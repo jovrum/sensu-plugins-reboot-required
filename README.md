@@ -3,8 +3,8 @@
 ## Functionality
 
 ## Files
- * bin/check-reboot-required.rb
-
+ * bin/check-reboot-required-debian.rb
+ * bin/check-reboot-required-redhat.rb
 
 ## Usage
 
