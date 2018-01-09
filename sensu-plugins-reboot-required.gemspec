@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.authors                = ['Sensu-Plugins and contributors']
 
   s.date                   = Date.today.to_s
-  s.description            = 'This plugin provides monitoring for VMware integrated OpenStack.'
+  s.description            = 'Sensu plugin for checking if a reboot is required.'
   s.email                  = '<sensu-users@googlegroups.com>'
   s.files                  = Dir.glob('{bin,lib}/**/*.rb') + %w[LICENSE README.md CHANGELOG.md]
   s.executables            = Dir.glob('bin/**/*.rb').map { |file| File.basename(file) }
@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.require_paths          = ['lib']
   s.required_ruby_version  = '>= 2.0.0'
 
-  s.summary                = 'Check if a reboot was required by a package upgrade on a Debian-based OS.'
+  s.summary                = 'Check if a reboot was required by a package upgrade on a Debian- or RedHat-based OS.'
   s.test_files             = s.files.grep(%r{^(test|spec|features)/})
   s.version                = SensuPluginsRebootRequired::Version::VER_STRING
 
